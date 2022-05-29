@@ -19,6 +19,8 @@ const BoardComponent: FC<BoardProps> = ({ board, setBoard }) => {
     ) {
       selectedCell.moveFigure(cell);
       setSelectedCell(null);
+    } else {
+      setSelectedCell(cell);
     }
 
     if (cell.figure) {
